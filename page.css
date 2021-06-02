@@ -10,11 +10,14 @@
     overflow: hidden;
 }
 body{
-    background-color: rgba(0, 0, 0, 0.666);
+    
+    background-image: url("back1.png");
+    background-size: cover;
 }
 .container{
     position:relative;
     height:100%;
+    backdrop-filter: blur(5px);
     width:100%;
 }
 .head_container{
@@ -59,9 +62,11 @@ body{
 }
 .catagory p{
     font-family: 'Changa', sans-serif;
+    font-size: 16px;
+    color: rgba(88, 177, 255, 0.598);
 }
 .catagory p:hover{
-    color: rgb(73, 73, 236);
+    color: rgb(255, 255, 255);
 }
 
 .other{
@@ -136,15 +141,19 @@ body{
 }
 .others2 div p{
     font-family: 'Changa', sans-serif;
+    font-size: 16px;
+    color: rgba(88, 177, 255, 0.598);
 }
 .others2 div p:hover{
-    color: rgb(74, 74, 251);
+    color: rgb(240, 240, 255);
 }
 .social{
     display: flex;
     align-items: center;
-    height: 50px;
-    width:100px;
+    height: 30px;
+    width:70px;
+    background-color: rgba(250, 235, 215, 0.353);
+    border-radius: 15px;
 
     justify-content: center;
     position: absolute;
@@ -156,14 +165,15 @@ body{
     height: 100%;
     position:relative;
     width:50px;
-    border-radius: ;
+    border-radius: 25px;
     display: flex;
     align-items: center;
+    
     justify-content: center;
 }
 .social div i{
 
-    font-size: 25px;
+    font-size: 20px;
 }
 .fb i{
     color: rgb(63, 63, 253);
@@ -197,7 +207,7 @@ body{
         font-size: 35px;
     }
     .others2 div p{
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 @media only screen and (max-width:1000px){
@@ -214,10 +224,10 @@ body{
         width: 65%;
     }
     .others2 div p{
-        font-size: 14px;
+        font-size: 15px;
     }
     .catagory p{
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 @media only screen and (max-width:700px){
