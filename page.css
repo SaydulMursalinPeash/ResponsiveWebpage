@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
 *{
     padding: 0;
     margin:0;
@@ -46,13 +47,99 @@ body{
     color: rgb(253, 202, 62);
     font-family: 'Righteous', cursive;
 }
+.catagory{
+    position: relative;
+    float: left;
+    width: 10%;
+}
+.catagory p{
+    font-family: 'Kanit', sans-serif;
+}
+.catagory p:hover{
+    color: rgb(73, 73, 236);
+}
+
 .other{
     position: absolute;
     float: right;
     right:0;
     height:50px;
-    width:80%;
-    background-color: rgba(137, 43, 226, 0.347);
+    width:70%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+    align-items: center;
+
+
+}
+.search{
+
+    display: grid;
+    grid-template-columns: auto 28px;
+    grid-template-rows: 28px;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 28px;
+    border-radius: 14px;
+    background-color: rgba(221, 221, 221, 0.496);
+    backdrop-filter: blur(5px);
+}
+.search input{
+    outline: 0px;
+    border: 0px;
+    height: 100%;
+    margin: 0;
+    height: 28px;
+    background-color: rgba(105, 105, 105, 0.299);
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 14px;
+}
+.search_icon{
+    height:28px;
+    width:28px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+}
+.search_icon i{
+    font-size: 20px;
+    color: rgb(251, 13, 72);
+}
+.others2{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.others2 div{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.others2 div p{
+    font-family: 'Kanit', sans-serif;
+}
+.others2 div p:hover{
+    color: rgb(74, 74, 251);
+}
+.social{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width:100px;
+    background-color: brown;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    
 
 }
 @media only screen and (max-width:1200px){
@@ -69,13 +156,23 @@ body{
         width: 30%;
     }
     .other{
-        width: 70%;
+        width: 60%;
     }
     .head_container{
         height: 80px;
     }
     .logo .logo_text{
         font-size: 35px;
+    }
+    .others2 div p{
+        font-size: 13px;
+    }
+    .search{
+        height: 25px;
+        border-radius: 12.5px;
+    }
+    .search input{
+        height: 25px;
     }
 }
 @media only screen and (max-width:1000px){
@@ -86,7 +183,13 @@ body{
         width: 25%;
     }
     .other{
-        width: 75%;
+        width: 65%;
+    }
+    .others2 div p{
+        font-size: 14px;
+    }
+    .catagory p{
+        font-size: 14px;
     }
 }
 @media only screen and (max-width:700px){
@@ -97,6 +200,7 @@ body{
         height: 60px;
         background-color: rgba(0, 0, 255, 0.136);
     }
+
 }
 @media only screen and (max-width:500px){
     .logo .logo_text{
