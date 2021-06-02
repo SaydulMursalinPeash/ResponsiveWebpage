@@ -16,7 +16,7 @@ body{
     width:100%;
 }
 .head_container{
-    height: 90px;
+    height: 85px;
     position:relative;
     width: 100%;
 
@@ -67,9 +67,8 @@ body{
     width:70%;
     padding-left: 10px;
     padding-right: 10px;
-    
-    display: grid;
-    grid-template-columns: 3fr 4fr 3fr;
+    align-items: center;
+    display:flex;
     align-items: center;
 
 
@@ -80,7 +79,9 @@ body{
     grid-template-columns: auto 28px;
     grid-template-rows: 28px;
     align-items: center;
-    width: 100%;
+    position: relative;
+    width: 30%;
+    float: left;
     padding: 0;
     margin: 0;
     height: 28px;
@@ -93,7 +94,7 @@ body{
     border: 0px;
     height: 100%;
     margin: 0;
-    background-color: rgba(105, 105, 105, 0.299);
+    background-color: rgba(202, 191, 191, 0.762);
     padding-left: 10px;
     padding-right: 5px;
     border-radius: 14px;
@@ -117,6 +118,9 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    position: absolute;
+    right: 110px;
+    width: 40%;
 }
 .others2 div{
 
@@ -135,12 +139,33 @@ body{
     align-items: center;
     height: 50px;
     width:100px;
-    background-color: brown;
+
     justify-content: center;
     position: absolute;
     right: 10px;
     
 
+}
+.social div{
+    height: 100%;
+    position:relative;
+    width:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social div i{
+
+    font-size: 25px;
+}
+.fb i{
+    color: rgb(63, 63, 253);
+}
+.tw i{
+    color: rgb(0, 136, 255);
+}
+.social div:hover{
+    background-color: blanchedalmond;
 }
 @media only screen and (max-width:1200px){
     .head{
@@ -159,7 +184,7 @@ body{
         width: 60%;
     }
     .head_container{
-        height: 80px;
+        height: 75px;
     }
     .logo .logo_text{
         font-size: 35px;
@@ -167,21 +192,13 @@ body{
     .others2 div p{
         font-size: 13px;
     }
-    .search{
-        height: 25px;
-        border-radius: 12.5px;
-    }
-    .search input{
-        position:relative;
-        height:25px;
-    }
-    .search .search_icon{
-        height: 25px;
-    }
 }
 @media only screen and (max-width:1000px){
     .head{
         width:100%;
+    }
+    .head_container{
+        height: 80px;
     }
     .logo{
         width: 25%;
@@ -202,7 +219,33 @@ body{
     }
     .head_container{
         height: 60px;
-        background-color: rgba(0, 0, 255, 0.136);
+
+    }
+    .social{
+        position: fixed;
+        top: 50%;
+        right: 0;
+        flex-direction: column;
+        width: 40px;
+        height: 80px;
+        border-radius: 20px;
+        background-color: rgb(42, 118, 165);
+        
+    }
+    .social div{
+        border-radius: 50%;
+
+    }
+    .social div:hover{
+        background-color: azure;
+
+    }
+    .others2{
+        right: 0;
+        width: 50%;
+    }
+    .search{
+        width: 40%;
     }
 
 }
