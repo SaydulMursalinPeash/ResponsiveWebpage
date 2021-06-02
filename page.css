@@ -93,14 +93,14 @@ body{
     border: 0px;
     height: 100%;
     margin: 0;
-    height: 28px;
     background-color: rgba(105, 105, 105, 0.299);
     padding-left: 10px;
     padding-right: 5px;
     border-radius: 14px;
 }
 .search_icon{
-    height:28px;
+    position:relative;
+    height:100%;
     width:28px;
     display: flex;
 
@@ -172,6 +172,10 @@ body{
         border-radius: 12.5px;
     }
     .search input{
+        position:relative;
+        height:25px;
+    }
+    .search .search_icon{
         height: 25px;
     }
 }
