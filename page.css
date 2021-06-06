@@ -52,22 +52,6 @@ body{
     color: rgb(253, 202, 62);
     font-family: 'Righteous', cursive;
 }
-.catagory{
-    position: relative;
-    float: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 10%;
-}
-.catagory p{
-    font-family: 'Changa', sans-serif;
-    font-size: 16px;
-    color: rgba(88, 177, 255, 0.598);
-}
-.catagory p:hover{
-    color: rgb(255, 255, 255);
-}
 
 .other{
     position: absolute;
@@ -191,7 +175,7 @@ body{
     width:25px;
     position: absolute;
     top:20px;
-    right:100px;
+    right:15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -203,6 +187,7 @@ body{
     border-radius: 3px;
     position: relative;
     background-color: rgb(206, 200, 200);
+
 }
 
 
