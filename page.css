@@ -122,7 +122,9 @@ body{
 }
 .search_icon i{
     font-size: 20px;
-    color: rgb(251, 13, 72);
+    color: rgb(255, 77, 121);
+    
+    animation: search_icon 1s infinite;
 }
 .others2{
 
@@ -184,6 +186,29 @@ body{
 .social div:hover{
     background-color: blanchedalmond;
 }
+.floating-menu{
+    height: 20px;
+    width:25px;
+    position: absolute;
+    top:20px;
+    right:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.floating-menu span{
+    height: 4px;
+    width: 100%;
+    border-radius: 3px;
+    position: relative;
+    background-color: rgb(206, 200, 200);
+}
+
+
+
+
+
 @media only screen and (max-width:1200px){
     .head{
         width:100%;
@@ -238,7 +263,7 @@ body{
         height: 60px;
 
     }
-    .social{
+    /*.social{
         position: fixed;
         top: 50%;
         left: 0;
@@ -249,7 +274,7 @@ body{
         border-radius: 20px;
         background-color: rgba(220, 215, 214, 0.197);
         
-    }
+    }*/
     .social div{
         border-radius: 50%;
 
@@ -266,10 +291,36 @@ body{
     .search{
         width: 40%;
     }
-
+    .search{
+        margin-left: 30px;
+    }
 }
-@media only screen and (max-width:500px){
-    .logo .logo_text{
-        font-size: 60px;
+@media only screen and (max-width:550px){
+    .other{
+        position: fxed;
+        top: 0;
+        right: 0;
+        height: 1000px;
+        width: 100%;
+        background: linear-gradient(yellow,white);
+        z-index: 3;
+        display: none;
+    }
+}
+@keyframes search_icon{
+    0%{
+        transform: rotate(15deg);
+    }
+    25%{
+        transform: rotate(0deg); 
+    }
+    50%{
+        transform: rotate(-15deg); 
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(15deg);
     }
 }
