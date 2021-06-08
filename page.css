@@ -175,6 +175,7 @@ body{
     position: absolute;
     top:20px;
     right:15px;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -188,6 +189,7 @@ body{
     background-color: rgb(206, 200, 200);
 
 }
+
 
 
 
@@ -247,7 +249,7 @@ body{
         height: 60px;
 
     }
-    /*.social{
+    .social{
         position: fixed;
         top: 50%;
         left: 0;
@@ -258,7 +260,7 @@ body{
         border-radius: 20px;
         background-color: rgba(220, 215, 214, 0.197);
         
-    }*/
+    }
     .social div{
         border-radius: 50%;
 
@@ -280,6 +282,9 @@ body{
     }
 }
 @media only screen and (max-width:550px){
+    .floating-menu{
+        visibility: visible;
+    }
     .logo{
         width: 50%;
         padding-left: 25px;
@@ -289,16 +294,20 @@ body{
         visibility: hidden;
         display: flex;
         top:0;
+        position: fixed;
+        height: 100%;
+        width: 100%;
         right:-100%;
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
         padding-top: 20%;
+        transition: all 0.5s;
 
     }
     .search{
         position: relative;
-        width: 80%;
+        width: 40%;
         margin:0;
     }
     .others2{
@@ -306,7 +315,7 @@ body{
         flex-direction: column;
         position: relative;
         margin-top: 5%;
-        width: 80%;
+        width: 60%;
         justify-content: left;
         padding-left: 10px;
         align-items: unset;
@@ -337,9 +346,8 @@ body{
         position: fixed;
         top: 0;
         right: 0;
-        height: 100%;
-        width: 60%;
-        background-color: rgba(90, 58, 120, 0.387);
+        
+        background-color: rgba(54, 54, 54, 0.387);
         transition: all 0.5s;
         backdrop-filter: blur(5px);
     }

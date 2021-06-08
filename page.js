@@ -8,6 +8,7 @@
     let afloating=document.querySelector(".floating-menu.active");
     afloating.addEventListener("click",function(){
         floating.classList.remove("active");
+        other.classList.remove("active");
     });
 
 }
