@@ -61,7 +61,6 @@ body{
     width:70%;
     padding-left: 10px;
     padding-right: 10px;
-    align-items: center;
     display:flex;
     align-items: center;
 
@@ -181,7 +180,7 @@ body{
     justify-content: space-between;
 
 }
-.floating-menu span{
+.floating-menu #aa,#bb,#cc{
     height: 4px;
     width: 100%;
     border-radius: 3px;
@@ -281,16 +280,92 @@ body{
     }
 }
 @media only screen and (max-width:550px){
+    .logo{
+        width: 50%;
+        padding-left: 25px;
+        justify-content: left;
+    }
     .other{
-        position: fxed;
+        visibility: hidden;
+        display: flex;
+        top:0;
+        right:-100%;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding-top: 20%;
+
+    }
+    .search{
+        position: relative;
+        width: 80%;
+        margin:0;
+    }
+    .others2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 5%;
+        width: 80%;
+        justify-content: left;
+        padding-left: 10px;
+        align-items: unset;
+        padding-right: 10px;
+    }
+    .others2 div{
+        justify-content: unset;
+        align-items: unset;
+
+        padding-left: 10px;
+    }
+    .others2 div:hover p{
+        color: rgb(61, 59, 59);
+    }
+    .others2 div:hover{
+        background-color: rgba(245, 245, 220, 0.578);
+        border-radius: 3px;
+
+    }
+    .social{
+        position:relative;
+        top: auto;
+        right: auto;
+        margin-top: 25%;
+    }
+    .other.active{
+        visibility: visible;
+        position: fixed;
         top: 0;
         right: 0;
-        height: 1000px;
-        width: 100%;
-        background: linear-gradient(yellow,white);
-        z-index: 3;
-        display: none;
+        height: 100%;
+        width: 60%;
+        background-color: rgba(90, 58, 120, 0.387);
+        transition: all 0.5s;
+        backdrop-filter: blur(5px);
     }
+    .floating-menu.active{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .floating-menu.active #aa{
+        position: absolute;
+        transform: rotate(-45deg);
+        transition: all 0.5s;
+    }
+    .floating-menu.active #bb{
+        visibility: hidden;
+        transition: all 0s;
+    }
+    .floating-menu.active #cc{
+        position: absolute;
+        transform: rotate(225deg);
+        transition: all 0.5s;
+    }
+    .floating-menu span{
+        transition: all 0.5s;
+    }
+    
 }
 @keyframes search_icon{
     0%{
