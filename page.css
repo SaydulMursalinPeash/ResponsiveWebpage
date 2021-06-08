@@ -282,6 +282,9 @@ body{
     }
 }
 @media only screen and (max-width:550px){
+    body{
+        background: url("back2.png");
+    }
     .floating-menu{
         visibility: visible;
     }
@@ -339,6 +342,7 @@ body{
         position:relative;
         top: auto;
         right: auto;
+        background-color: rgba(0, 0, 0, 0.7);
         margin-top: 25%;
     }
     .other.active{
@@ -372,6 +376,9 @@ body{
     }
     .floating-menu span{
         transition: all 0.5s;
+    }
+    .others2 div p{
+        color: rgba(255, 247, 25, 0.938);
     }
     
 }
