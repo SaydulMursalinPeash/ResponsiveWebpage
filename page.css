@@ -173,7 +173,7 @@ body{
     height: 20px;
     width:25px;
     position: absolute;
-    top:20px;
+    top:18px;
     right:15px;
     visibility: hidden;
     display: flex;
@@ -186,7 +186,7 @@ body{
     width: 100%;
     border-radius: 3px;
     position: relative;
-    background-color: rgb(206, 200, 200);
+    background-color: rgba(0, 0, 0, 0.421);
 
 }
 
@@ -375,14 +375,12 @@ body{
     }
     .floating-menu span{
         transition: all 0.5s;
+        
     }
     .others2 div p{
         color: rgba(255, 247, 25, 0.938);
     }
-    .head_container{
-      background-color: rgba(54, 54, 54, 0.387);
-     
-   }
+    
 }
 @keyframes search_icon{
     0%{
