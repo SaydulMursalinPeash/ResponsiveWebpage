@@ -88,7 +88,7 @@ body{
     height: 100%;
     margin: 0;
     font-family: 'Changa', sans-serif;
-    background-color: rgba(202, 191, 191, 0.762);
+    background-color: rgba(153, 157, 160, 0.374);
     padding-left: 10px;
     padding-right: 5px;
     border-radius: 14px;
@@ -98,9 +98,16 @@ body{
     height:100%;
     width:28px;
     display: flex;
+    border-radius: 14px;
+    z-index: -1;
+
 
     align-items: center;
     justify-content: center;
+
+}
+.search_icon:hover{
+    background-color: rgba(255, 255, 255, 0.625);
 
 }
 .search_icon i{
