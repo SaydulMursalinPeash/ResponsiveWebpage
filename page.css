@@ -173,7 +173,7 @@ body{
     height: 20px;
     width:25px;
     position: absolute;
-    top:18px;
+    top:16px;
     right:15px;
     visibility: hidden;
     display: flex;
@@ -186,7 +186,7 @@ body{
     width: 100%;
     border-radius: 3px;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.421);
+    background-color: rgba(0, 0, 0, 0.285);
 
 }
 
