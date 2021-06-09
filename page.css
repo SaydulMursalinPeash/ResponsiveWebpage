@@ -305,6 +305,8 @@ body{
         box-sizing: border-box;
         padding-top: 40%;
         transition: all 0.5s;
+        top:0;
+        right:0;
 
     }
     .search{
@@ -347,8 +349,6 @@ body{
     .other.active{
         visibility: visible;
         position: fixed;
-        top: 0;
-        right: 0;
         clip-path: circle(120.0% at 100% 50%);
         
         background-color: rgba(54, 54, 54, 0.387);
