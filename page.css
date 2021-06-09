@@ -294,7 +294,6 @@ body{
         justify-content: left;
     }
     .other{
-        visibility: hidden;
         display: flex;
         position: fixed;
         height: 100%;
